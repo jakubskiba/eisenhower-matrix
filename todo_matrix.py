@@ -141,6 +141,7 @@ class TodoMatrix:
         -------
         string
         """
+
         if 'I' in quarter:
             return 'important'
         else:
@@ -154,6 +155,7 @@ class TodoMatrix:
         ----------
         file_name : string, path to file
         """
+
         with open(file_name, 'w') as f:
             for quarter in self.todo_quarters:
                 for item in self.todo_quarters[quarter].todo_items:

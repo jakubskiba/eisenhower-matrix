@@ -47,7 +47,7 @@ class CoursesWindow:
         ----------
         message : string
         """
-    
+
         self.text_window.addstr(message + '\n')
         self.update()
 
@@ -55,6 +55,7 @@ class CoursesWindow:
         """
         Closes all windows
         """
+
         self.stdscr.clear()
         curses.endwin()
 
