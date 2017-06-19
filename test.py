@@ -164,7 +164,6 @@ class TodoQuarterTester(unittest.TestCase):
         self.assertEqual(len(quarter.todo_items), 2, 'Incorrect lenght of todo_items list')
         self.assertEqual(quarter.todo_items[0].title,'go to Codecool', 'Incorrect item')
 
-
     def test_str(self):
         quarter = TodoQuarter()
 
@@ -186,7 +185,6 @@ class TodoQuarterTester(unittest.TestCase):
 
 
 class TodoMatrixTester(unittest.TestCase):
-
 
     def test_constructor(self):
         matrix = TodoMatrix()

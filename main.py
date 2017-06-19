@@ -27,7 +27,7 @@ def ask_user(window, prompt):
 
 def print_menu(window, menu_options):
     """
-    Prints menu and provide navigation
+    Prints menu and provides navigation
 
     Parameters
     ----------
@@ -79,6 +79,7 @@ def add_item(matrix):
     ----------
     matrix : TodoMatrix
     """
+
     window = CoursesWindow('Eisenhower matrix: add item', 'Please provide data, validate with enter')
     title = ask_user(window, 'title')
     window.end_win()
@@ -155,6 +156,7 @@ def change_task_status(task):
 def delete_task(quarter, task):
     """
     Deletes task from quarter
+
     Parameters
     ----------
     quarter : TodoQuarter

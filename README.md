@@ -118,7 +118,83 @@ Bob is a beginner Codecooler. He is a good self-learner, but he has a problem to
 ## The specification
 
 ### `main.py`
-TODO
+
+This is main program file
+
+__Functions__
+
+* #### ask_user(window, prompt)
+  
+  Asks for user input
+  Returns string with user input
+
+* print_menu(window, menu_options)
+
+  User interface:
+  'j' or 's' are for down
+  'k' or 'w' are for up
+  enter to validate
+  'q' to quit or return
+
+  Prints menu and provides navigation
+
+* add_item(matrix)
+
+  Ask user for day, month, title and importance of task and add it to matrix
+
+* choose_quarter(matrix)
+
+  Ask user to choose matrix quarter
+
+* change_task_status(task)
+  
+  Reverse is_done status of TodoItem
+
+* delete_task(quarter, task)
+
+  Deletes task from quarter
+
+* view_task(quarter, task)
+
+  Provides menu for operation on task
+
+  Operations:
+    - change status
+    - delete task
+    - reverse to main menu
+
+* show_quarter(*args)
+
+  Lists all task in specified quarter
+
+* archive_items(matrix)
+
+  Deletes all done tasks
+
+* show_all_tasks(matrix)
+
+  Lists task from entire matrix sorted by deadline
+
+* show_whole_matrix(matrix)
+
+  Prints all four quarters of matrix
+
+* open_file(matrix)
+
+  Loads data from file to matrix
+
+    Asks user for file path if wasn't provided in system argument
+    Creates file if non existing
+  
+* main()
+
+  Loads and save data to file.
+  Provides menu for main functions:
+      - add task
+      - show quarter
+      - show all task chronologically
+      - show whole matrix
+      - archive items
 
 ### `todo_item.py`
 
